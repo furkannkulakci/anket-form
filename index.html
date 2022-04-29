@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Anket Formu</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> Sürdürülebilir Beslenme Anket Formu</h1>
+    <p id="description" class="description text-center">
+      Değerli zamanınızı ayırdığınız için teşekkür ederiz.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Adınız</label>
+      <input type="text" id="name" class="form-control" placeholder="Adınızı giriniz" required />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Email giriniz" required />
+    </div>
+    <div class="form-group">
+      <p>Yaşınız</p>
+      <label>
+        <input type="radio" name="age" class="input-radio"/>18-24</label> <label>
+        <input type="radio" name="age" class="input-radio"/>25-34</label>
+      <label>
+        <input type="radio" name="age" class="input-radio"/>35-44</label> <label>
+        <input type="radio" name="age" class="input-radio"/>45-54</label>
+      <label>
+        <input type="radio" name="age" class="input-radio"/>55-64</label> <label>
+    </div>
+      
+      <div class="form-group">
+        <label id="number-label "for="number">Ağırlığınız</label>
+        <input id="number" type="number" class="form-control" placeholder="kg" required>
+      </div>
+      
+      <div class="form-group">
+        <label id="number-label "for="number">Boyunuz</label>
+        <input id="number" type="number" class="form-control" placeholder="cm" required>
+      </div>
+
+    <div class="form-group">
+      <p>Cinsiyetiniz</p>
+      <label>
+        <input value="female" name="gender" type="radio" class="input-radio" />Kadın</label><label>
+        <input value="male" name="gender" type="radio" class="input-radio" />Erkek</label>
+    </div>
+
+    <div class="form-group">
+      <p>Eğitim durumunuz</p>
+      <select id="dropdown" class="form-control" required>
+        <option disabled selected value>Lütfen seçim yapınız</option>
+        <option value="ilkokul">İlkokul</option>
+        <option value="ortaokul">Ortaokul</option>
+        <option value="lise">Lise</option>
+        <option value="universite">Üniversite</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>‘Sürdürülebilir Beslenme’ kavramını daha önce duydunuz mu?</p>
+      <label>
+        <input value="evet" name="isHear" type="radio" class="input-radio" />Evet</label>
+      <label>
+        <input value="hayır" name="isHear" type="radio" class="input-radio" />Hayır</label>
+      </div>
+  
+    <div class="form-group">
+      <p>
+       	Eğer duyduysanız aşağıdakiler kaynaklardan hangilerinden duyduğunuzu işaretleyiniz? 
+        <span class="clue">(Birden çok seçim yapabilirsiniz)</span>
+      </p>
+
+      <label><input name="prefer" value="sosyal-medya" type="checkbox" class="input-checkbox" />Sosyal medya</label>
+      <label>
+        <input name="prefer" value="televizyon" type="checkbox" class="input-checkbox" />Televizyon</label>
+      <label><input name="prefer" value="cevre" type="checkbox" class="input-checkbox" />Çevremdeki kişiler</label>
+      <label><input name="prefer" value="kitap-dergi" type="checkbox" class="input-checkbox" />Kitaplar ve dergiler</label>
+      <label><input name="prefer" value="makale" type="checkbox" class="input-checkbox" />Bilimsel çalışmalar (makale vb.)</label>
+    </div>
+      
+      <div class="form-group">
+      <p>Sizce aşağıdakilerden hangisi sürdürülebilir beslenmenin tanımı olabilir?</p>
+      <label>
+        <input type="radio" name="choice" class="input-radio"/>Sağlıklı beslenmenin ekonomik ve çevreye duyarlı olduğunu var sayan beslenme biçimidir.</label>
+      <label>
+        <input type="radio" name="choice" class="input-radio"/>Hem şimdiki hem gelecek nesillerin sağlıklı yaşamasına katkı sunan, gıda ve beslenme güvencesine katkıda bulunan, düşük çevresel etkiye sahip bir beslenme biçimidir.</label>
+        
+         <label>
+        <input type="radio" name="choice" class="input-radio"/>Tüm besin gruplarından eşit miktarda tüketilen beslenme biçimidir.</label>
+        
+         <label>
+        <input type="radio" name="choice" class="input-radio"/>Yaşamın tüm dönemlerinde uygulanabilirliği amaçlayan beslenme şeklidir.</label>
+      </div>
+      
+      <div class="form-group">
+      <p>Sürdürülebilir beslenme konusunda daha önce hiç eğitim aldınız mı? </p>
+      <label>
+        <input value="evet" name="yesOrNo" type="radio" class="input-radio"/>Evet</label>
+      <label>
+        <input value="hayır" name="yesOrNo" type="radio" class="input-radio"/>Hayır</label>
+      </div>
+      
+      <div class="form-group">
+      <p>Sürdürülebilir beslenme konusundaki bilgi düzeyinizi tanımlayınız?</p>
+      <label>
+        <input type="radio" name="levelInformation" class="input-radio"/>Duydum ama pek bilmiyorum</label>
+      <label>
+        <input type="radio" name="levelInformation" class="input-radio"/>Biraz biliyorum</label>
+        
+         <label>
+        <input type="radio" name="levelInformation" class="input-radio"/>İyi düzeyde biliyorum</label>
+        
+         <label>
+        <input type="radio" name="levelInformation" class="input-radio"/>Konuya tamamen hakimim</label>
+      </div>
+
+    <div class="form-group">
+      <p>Konu hakkında tavsiyeleriniz var mı?</p>
+      <textarea id="comments" class="input-textarea" placeholder="Yorumunuzu giriniz..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Gönder
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
